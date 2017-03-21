@@ -25,11 +25,6 @@
 from blinkt import set_pixel, set_brightness, show, clear, set_clear_on_exit
 import time, colorsys, sys, getopt
 
-spacing = 360.0 / 16.0
-hue = 0
-brightness = 0.04
-duration = 5.0
-
 def show_usage():
   print 'rainbow.py -d <duration> -b <brightness>'
 
@@ -38,6 +33,7 @@ def should_it_continue(start_time, duration):
   return (now - start_time) < duration
 
 def rainbow(duration, brightness):
+  spacing = 360.0 / 16.0
   set_brightness(brightness)
   start = time.time()
   while should_it_continue(start, duration):
@@ -51,6 +47,8 @@ def rainbow(duration, brightness):
     time.sleep(0.01)
 
 def main(argv):
+  brightness = 0.04
+  duration = 5.0
   try:
     opts, args = getopt.getopt(argv, "d:b:", ["duration=", "brightness="])
   except getopt.GetoptError:
