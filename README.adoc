@@ -7,3 +7,9 @@ Having some rainbow fun with a rpi zero w and a blinkt module
 ```
 python rainbow.py [-d|--duration <number>] [-b|--brightness <number>]
 ```
+
+== Thanks
+
+The `rainbow` function was created after https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-blinkt. Thank you Pimoroni for this.
+
+The script `getopt` part was created after https://www.tutorialspoint.com/python/python_command_line_arguments.htm. Thank you for this.
