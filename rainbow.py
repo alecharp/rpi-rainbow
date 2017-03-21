@@ -22,7 +22,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from blinkt import set_pixel, set_brightness, show, clear
+from blinkt import set_pixel, set_brightness, show, clear, set_clear_on_exit
 import time, colorsys, sys, getopt
 
 spacing = 360.0 / 16.0
