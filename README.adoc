@@ -1,0 +1,9 @@
+= RaspberryPI Zero W Rainbow
+
+Having some rainbow fun with a rpi zero w and a blinkt module
+
+== Usage
+
+```
+python rainbow.py [-d|--duration <number>] [-b|--brightness <number>]
+```
